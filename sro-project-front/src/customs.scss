@@ -1,0 +1,15 @@
+$theme-colors:(
+    "primary": rgb(187, 252, 8),
+    "secondary": rgb(128, 98, 58),
+    "success": green,
+    "info": blue,
+    "warning": rgb(255, 196, 0),
+    "danger": red,
+    "light": white,
+    "dark": darkblue, 
+
+
+) !default;
+
+
+@import "./../node_modules/bootstrap/scss/bootstrap"

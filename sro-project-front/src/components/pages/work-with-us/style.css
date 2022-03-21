@@ -1,0 +1,13 @@
+/* .work {
+} */
+.workContainerCenter {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  width: fit-content;
+}
+/* .workList {
+  padding-left: 1rem;
+} */

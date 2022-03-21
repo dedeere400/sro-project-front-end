@@ -11,8 +11,9 @@ header {
   background-color: #0f9b88;
 }
 .containerHeader {
-  width: 90%;
+  /* width: 90%; */
   margin: 0 auto;
+  padding: 0 2rem;
 }
 .logo {
   background-color: #0f9b88;
@@ -20,31 +21,32 @@ header {
   color: white;
 }
 
-.container-o {
+.containerO {
   position: relative;
+  padding: 0 1rem;
 }
-.container-o h2 {
-  font-size: 6rem;
+.encabezadoO {
+  font-size: 4rem;
 }
-.container-s {
+.containerS {
   position: absolute;
-  top: 2.1rem;
-  left: 1.8rem;
-  font-size: 1.5rem;
+  top: 1.5rem;
+  left: 2.2rem;
+  font-size: 0.5rem;
 }
-.container-r {
+.containerR {
   position: absolute;
-  top: 3.5rem;
-  left: 1.72rem;
-  font-size: 1.3rem;
+  top: 2.4rem;
+  left: 2.2rem;
+  font-size: 1rem;
 }
-.flex-header {
+.flexHeader {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
 }
-.barra__about {
+.barraAbout {
   display: flex;
   justify-content: center;
   gap: 2rem;
@@ -52,52 +54,54 @@ header {
   border-bottom: 2px solid black;
   border-top: 2px solid black;
 }
-.barra-a {
+.barraA {
   padding: 0.5rem;
   color: #fff;
   font-size: 1.2rem;
   text-decoration: none;
   text-transform: capitalize;
 }
-.barra-a:hover {
+.barraA:hover {
   background-color: #0f9b88;
+  color: #fff;
 }
 .search {
   display: flex;
   align-items: center;
 }
-.input-search {
+.inputSearch {
   width: 300px;
   padding: 0.5rem;
 }
-.search-label {
+.searchLabel {
   display: inline-block;
   color: #fff;
   margin-right: 1rem;
   font-size: 1.2rem;
 }
-.search p {
+/* .lupa {
   margin-left: -2rem;
-}
+} */
 .selecto {
   padding: 0.5rem;
 }
 /*------------------------------------------main----------------------------*/
-.heading-main {
+/* .heading-main {
   text-align: center;
   padding: 1rem 0 2rem 0;
   text-transform: uppercase;
-}
+} */
 .main {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: space-around;
-}
-main {
   background-image: linear-gradient(#0f9b88, #fff);
 }
-.gamer-stuff {
+/* main {
+  background-image: linear-gradient(#0f9b88, #fff);
+} */
+/* .gamer-stuff {
   width: 300px;
   box-shadow: 0px 0px 9px 0px #000000;
   transition: 0.3s linear;
@@ -108,4 +112,9 @@ main {
 }
 .gamer-stuff img {
   width: 100%;
+} */
+
+.linkLogo {
+  display: inline-block;
+  text-decoration: none;
 }

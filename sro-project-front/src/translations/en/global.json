@@ -1,6 +1,33 @@
 {
     "header": {
-        "hello-world": "Hello World",
-        "cromo": "Search Crom"
+        "cromo": "Search Crom",
+        "auth": "Log In",
+        "theme": "Change Theme",
+        "work-with-us": "Work With Us",
+        "about": "About Us",
+        "ayuda": "Help",
+        "costumer-service": "Costumer Service"
+    },
+    "banner": {
+        "banner-work": "Work with Us",
+        "banner-p1": "Do you want to be part of our company?",
+        "banner-p2": "We offer",
+        "banner-work-list1": "Full time",
+        "banner-work-list2": "Indefinite contract after the trial period",
+        "banner-require": "Required",
+        "banner-requiere-list1": "High/bilingual level in Spanish and French/English",
+        "banner-requiere-list2": "User level computer skills",
+        "banner-mail": "Send us your resume to"
+    },
+    "about": {
+        "our-story": "Expressions such as 'this one I have repe', 'can you change it for me', 'I'll give it to you if you give me five' and 'sile, nole' or 'sipi, nopi' were for decades a common part of the conversations that were heard in the recesses of schools all over Spain. But, what has become of the exchange of stickers, was it relegated to oblivion because of new technologies?",
+        "our-trayectory": "We are professionals capable of integrating knowledge, and the emotional capacity to adapt to a variety of situations. We have diverse experience that distinguishes us in terms of flexibility and versatility. And that's why we are ready to take on new challenges. Our company does not stop growing and our goal is to bring you back to childhood."
+    },
+    "help": {
+        "help-how-to": "How to navigate the website",
+        "help-rules": "Rules",
+        "help-li1": "You must first identify yourself or register",
+        "help-li2": "You can then freely browse the web and search for stickers and add them to your basket.",
+        "help-li3": "When you are finished with your selection, click on the shopping cart to finalize your order."
     }
 }

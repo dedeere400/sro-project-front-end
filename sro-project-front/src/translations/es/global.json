@@ -1,6 +1,33 @@
 {
     "header": {
-        "hello-world": "Hola Mundo",
-        "cromo": "Buscar Cromos"
+        "cromo": "Buscar Cromos",
+        "theme": "Cambiar Tema",
+        "auth": "Identificate",
+        "work-with-us": "Trabaja Con Nosotros",
+        "about": "Sobre Nosotros",
+        "ayuda": "Ayuda",
+        "costumer-service": "Atencion Al Cliente"
+    },
+    "banner": {
+        "banner-work": "Trabaje con nosotros",
+        "banner-p1": "Quieres formar parte de nuestra empresa?",
+        "banner-p2": "Se ofrece",
+        "banner-work-list1": "Jornada completa",
+        "banner-work-list2": "Contrato indefinido superado el periodo de pruebas",
+        "banner-require": "Se ofrece",
+        "banner-requiere-list1": "Nivel alto/bilingüe de español y frances/ingles",
+        "banner-requiere-list2": "Conocimientos a nivel usuario de informática",
+        "banner-mail": "Envianos tu curriculum a"
+    },
+    "about": {
+        "our-story": "Expresiones como 'este lo tengo repe', '¿me lo cambias?', 'te lo doy si tú me das cinco' y 'sile, nole' o 'sipi, nopi' fueron durante décadas parte habitual de las conversaciones que se escuchaban en los recreos de los colegios de toda España. Pero, ¿qué ha sido del intercambio de cromos?, ¿quedó relegado al olvido por culpa de las nuevas tecnologías?",
+        "our-trayectory": "Somos profesionales capaces de integrar los conocimientos, y la capacidad emocional para adaptarse a una variedad de situaciones. Tenemos experiencia diversa que nos distingue en términos de flexibilidad y polivalencia. Y por eso estamos listos para asumir nuevos desafíos. Nuestra empresa no parra de crecer y nuestro objetivo estraeros la infancia de nuevo."
+    },
+    "help": {
+        "help-how-to": "Como navegar la pagina",
+        "help-rules": "Reaglas",
+        "help-li1": "Primero tiene que identificarse o registrarse",
+        "help-li2": "Despues puede navegar libremente por la web y buscar cromos y añadirlos a su cesta",
+        "help-li3": "Cuando haya terminado con su eleccion, haz click en la cesta para finalizar el pedido."
     }
 }

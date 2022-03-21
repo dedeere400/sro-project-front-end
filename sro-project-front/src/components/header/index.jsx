@@ -5,23 +5,12 @@ import { useTranslation } from 'react-i18next';
 
 
 
-// import { ThemeContext } from '../../theme.toogle/theme';
-
-
-
 function Header() {
 
     const [t, i18n] = useTranslation('global')
 
-    // const [{ theme, isDark }, toggleTheme] = useContext(ThemeContext);
-    // console.log('theme', theme)
-
-
     return (
         <React.Fragment>
-            <h1>{t("header.hello-world")}</h1>
-            <button onClick={() => i18n.changeLanguage('es')}>es</button>
-            <button onClick={() => i18n.changeLanguage('en')}>en</button>
             <div className="body">
                 <div className="containerHeader">
                     <div className="flexHeader">
@@ -42,20 +31,18 @@ function Header() {
                         <div className="containerMiddle flexHeader">
                             <div className="search">
 
-                                <label className="searchLabel" htmlFor="search">Buscar Cromo</label>
+                                <label className="searchLabel" htmlFor="search">{t("header.cromo")}</label>
                                 <input className="inputSearch" type="search" />
                                 {/* <p className='lupa'>🔎</p> */}
                             </div>
 
-                            <div className="containerLang">
-                                <select className="selecto" name="lang" id="none">
-                                    <option value="En">Es</option>
-                                    <option value="Es">En</option>
-                                </select>
+                            <div className="containerLang d-flex jusctify-between">
+                                <button className='btnHeader' onClick={() => i18n.changeLanguage('es')}>ES</button>
+                                <button className='btnHeader' onClick={() => i18n.changeLanguage('en')}>EN</button>
                             </div>
 
                             <div className="themming">
-                                <label htmlFor="temming">Cambiar tema</label>
+                                <label htmlFor="temming">{t("header.theme")}</label>
                                 <input type="checkbox" />
                                 {/* <button className='toogleTheme' onClick={toggleTheme}>
                                     Modos {isDark ? 'dark' : 'light'}
@@ -65,7 +52,7 @@ function Header() {
 
                         <div className="containerLogin flexHeader">
                             <div className="login">
-                                <Link to="#">Identificate</Link>
+                                <Link to="#">{t("header.auth")}</Link>
                             </div>
                             <div className="basket">
                                 <Link to="#">🛒</Link>
@@ -74,10 +61,10 @@ function Header() {
                     </div>
                 </div>
                 <div className="barraAbout">
-                    <Link to="workWithUs" className="barraA">trabaja con nosotros</Link>
-                    <Link to="#" className="barraA">sobre nosotros</Link>
-                    <Link to="#" className="barraA">ayuda</Link>
-                    <Link to="#" className="barraA">atencion al cliente</Link>
+                    <Link to="workWithUs" className="barraA">{t("header.work-with-us")}</Link>
+                    <Link to="about" className="barraA">{t("header.about")}</Link>
+                    <Link to="help" className="barraA">{t("header.ayuda")}</Link>
+                    <Link to="costumerService" className="barraA">{t("header.costumer-service")}</Link>
                 </div>
             </div>
         </React.Fragment>

@@ -5,6 +5,8 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import LandingPage from './components/pages/landing-page';
 import Footer from './components/pages/footer';
 import TrabajaNosotros from './components/pages/work-with-us';
+import AboutUs from './components/pages/about';
+import Help from './components/pages/help';
 
 
 // import { ThemingContext } from './shared/theming/theming.context';
@@ -27,8 +29,8 @@ function App() {
           <Route path='home'></Route>
           <Route path='shop'></Route>
           <Route path='workWithUs' element={<TrabajaNosotros></TrabajaNosotros>}></Route>
-          <Route path='about'></Route>
-          <Route path='help'></Route>
+          <Route path='about' element={<AboutUs></AboutUs>}></Route>
+          <Route path='help' element={<Help></Help>}></Route>
           <Route path='costumerService'></Route>
         </Routes>
         <Footer></Footer>

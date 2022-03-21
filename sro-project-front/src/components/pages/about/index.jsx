@@ -1,29 +1,37 @@
+import React from "react";
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import React from 'react';
-import './style.css';
+import Container from 'react-bootstrap/Container'
 import { useTranslation } from 'react-i18next';
+import './style.css';
 
-function Help() {
+function AboutUs() {
 
     const [t] = useTranslation('global')
 
     return (
-        <React.Fragment>
-            <h3 className='text-center mt-5 bg-dark p-3 text-white'>{t("help.help-how-to")}</h3>
+        <Container fluid>
             <Row className="m-5 cardShadow">
                 <Col>
                     <Card>
                         <Card.Body>
-                            <Card.Title>{t("help.help-rules")}</Card.Title>
+                            <Card.Title>Nuestra Historia</Card.Title>
                             <Card.Text>
-                                <ul className='ulHelp'>
-                                    <li className='liHelp'>{t("help.help-li1")}</li>
-                                    <li className='liHelp'>{t("help.help-li1")}</li>
-                                    <li className='liHelp'>{t("help.help-li1")}</li>
-                                </ul>
-                                {/* {t("about.our-trayectory")} */}
+                                {t("about.our-story")}
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                </Col>
+            </Row>
+
+            <Row className="m-5 cardShadow">
+                <Col>
+                    <Card>
+                        <Card.Body>
+                            <Card.Title>Nuestra Trayectoria</Card.Title>
+                            <Card.Text>
+                                {t("about.our-trayectory")}
                             </Card.Text>
                         </Card.Body>
                     </Card>
@@ -37,8 +45,8 @@ function Help() {
                     </Card>
                 </Col>
             </Row>
-        </React.Fragment>
+        </Container>
     );
 }
 
-export default Help;
+export default AboutUs;

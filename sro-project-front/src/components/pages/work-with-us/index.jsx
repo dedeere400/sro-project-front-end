@@ -11,7 +11,7 @@ function TrabajaNosotros() {
 
     return (
         <section className="work d-flex flex-column">
-            <div className="workContainerCenter p-2">
+            <div className="workContainerCenter p-2 mt-2 d-flex flex-column">
                 <h1 className='workEncabezado mb-5 text-center'>{t("banner.banner-work")}</h1>
                 <h5 className="textoPlano bold text-center">{t("banner.banner-p1")}</h5>
                 <p className="textoPlano bold">{t("banner.banner-p2")}</p>

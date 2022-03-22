@@ -12,7 +12,7 @@
 
 }
 */
-header {
+.header {
   background-color: #0f9b88;
 }
 .containerHeader {
@@ -75,6 +75,11 @@ header {
   .containerLogin {
     flex-direction: row;
     margin-bottom: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .basket {
+    align-self: center;
   }
 }
 @media (max-width: 768px) {
@@ -83,6 +88,7 @@ header {
     align-items: flex-start;
   }
 }
+
 .barraAbout {
   display: flex;
   justify-content: center;
@@ -112,9 +118,10 @@ header {
 .search {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .inputSearch {
-  width: 300px;
+  max-width: 300px;
   padding: 0.5rem;
 }
 .searchLabel {
@@ -126,7 +133,7 @@ header {
 /* .lupa {
   margin-left: -2rem;
 } */
-.selecto {
+containerLogin .selecto {
   padding: 0.5rem;
 }
 /*------------------------------------------main----------------------------*/

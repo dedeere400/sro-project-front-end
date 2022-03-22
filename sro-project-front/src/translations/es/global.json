@@ -32,6 +32,13 @@
         "help-li2": "Despues puede navegar libremente por la web y buscar cromos y añadirlos a su cesta.",
         "help-li3": "Cuando haya terminado con su eleccion, haz click en la cesta para finalizar el pedido."
     },
+    "helpEdit": {
+        "helpEdit-title": "Editar cuenta o darse de baja.",
+        "helpEdit-li1": "Pulsa al boton editar cuenta.",
+        "helpEdit-li2": "Rellena el formulario.",
+        "helpEdit-li3": "La solicutud se ejecuta en 3 dias laborales.",
+        "helpEdit-link": "Editar"
+    },
     "landing": {
         "land-venta": "Venta de Cromos de Pokemons",
         "land-id": "Identificate o registrate",
@@ -41,5 +48,14 @@
         "land-pass": "Contraseña",
         "land-paypal": "Email de PayPal",
         "land-submit": "Enviar"
+    },
+    "costService": {
+        "costumer-headre": "Hola. En qué podemos ayudarte?",
+        "costumer-title": "Contacta con Nosotros.",
+        "costumer-text": "Mandandos un email a sro@gmailcom",
+        "costumer-email": "Responderemos en menos de 24 horas"
+    },
+    "footer": {
+        "copyright": "Todos los derechos reservados"
     }
 }

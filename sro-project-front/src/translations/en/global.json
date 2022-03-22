@@ -1,6 +1,6 @@
 {
     "header": {
-        "cromo": "Search Crom",
+        "cromo": "Search Chrome",
         "auth": "Log In",
         "theme": "Change Theme",
         "work-with-us": "Work With Us",
@@ -32,6 +32,13 @@
         "help-li2": "You can then freely browse the web and search for stickers and add them to your basket.",
         "help-li3": "When you are finished with your selection, click on the shopping cart to finalize your order."
     },
+    "helpEdit": {
+        "helpEdit-title": "Edit account or unsubscribe.",
+        "helpEdit-li1": "Click on the edit account button.",
+        "helpEdit-li2": "Fill in the form.",
+        "helpEdit-li3": "The request is executed in 3 working days.",
+        "helpEdit-link": "Edit"
+    },
     "landing": {
         "land-venta": "Sale of Pokemon Stickers",
         "land-id": "Login or register",
@@ -41,5 +48,14 @@
         "land-pass": "Password",
         "land-paypal": "PayPal Email",
         "land-submit": "Submit"
+    },
+    "costService": {
+        "costumer-headre": "Hello, how can we help you?",
+        "costumer-title": "Contact us.",
+        "costumer-text": "Send us an email to sro@gmailcom",
+        "costumer-email": "We will respond within 24 hours"
+    },
+    "footer": {
+        "copyright": "All rights reserved"
     }
 }

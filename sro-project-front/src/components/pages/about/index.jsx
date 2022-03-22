@@ -12,11 +12,11 @@ function AboutUs() {
 
     return (
         <Container fluid>
-            <Row className="m-5 cardShadow">
+            <Row className="cardShadow">
                 <Col>
                     <Card>
                         <Card.Body>
-                            <Card.Title>Nuestra Historia</Card.Title>
+                            <Card.Title>{t("about.our-history-header")}</Card.Title>
                             <Card.Text>
                                 {t("about.our-story")}
                             </Card.Text>
@@ -25,11 +25,11 @@ function AboutUs() {
                 </Col>
             </Row>
 
-            <Row className="m-5 cardShadow">
+            <Row className="cardShadow">
                 <Col>
                     <Card>
                         <Card.Body>
-                            <Card.Title>Nuestra Trayectoria</Card.Title>
+                            <Card.Title>{t("about.our-trayectory-header")}</Card.Title>
                             <Card.Text>
                                 {t("about.our-trayectory")}
                             </Card.Text>
@@ -39,7 +39,7 @@ function AboutUs() {
             </Row>
 
             <Row className="m-5 cardShadow">
-                <Col>
+                <Col className='none'>
                     <Card>
                         <Card.Img variant="top" src="https://imgur.com/Ig5g1Fp.png" />
                     </Card>

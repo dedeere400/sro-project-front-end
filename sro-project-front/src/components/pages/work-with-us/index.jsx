@@ -1,4 +1,4 @@
-import BackgroundA from '../../../shared/background';
+// import BackgroundA from '../../../shared/background';
 import './style.css';
 import { useTranslation } from 'react-i18next';
 import Card from 'react-bootstrap/Card';
@@ -10,8 +10,7 @@ function TrabajaNosotros() {
     const [t] = useTranslation('global')
 
     return (
-        <section className="work p-5">
-            {/* <BackgroundA></BackgroundA> */}
+        <section className="work d-flex flex-column">
             <div className="workContainerCenter p-2">
                 <h1 className='workEncabezado mb-5 text-center'>{t("banner.banner-work")}</h1>
                 <h5 className="textoPlano bold text-center">{t("banner.banner-p1")}</h5>
@@ -28,7 +27,7 @@ function TrabajaNosotros() {
                 <p className="textoPlano">{t("banner.banner-mail")} <span className='workContactEmail text-info'>sro@gmail.com</span></p>
             </div>
             <Row className="m-5 cardShadow">
-                <Col>
+                <Col className='none'>
                     <Card>
                         <Card.Img variant="top" src="https://imgur.com/Ig5g1Fp.png" />
                     </Card>

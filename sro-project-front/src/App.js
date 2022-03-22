@@ -7,6 +7,7 @@ import Footer from './components/pages/footer';
 import TrabajaNosotros from './components/pages/work-with-us';
 import AboutUs from './components/pages/about';
 import Help from './components/pages/help';
+import CostumerService from './components/pages/costumer.service';
 
 
 // import { ThemingContext } from './shared/theming/theming.context';
@@ -31,7 +32,7 @@ function App() {
           <Route path='workWithUs' element={<TrabajaNosotros></TrabajaNosotros>}></Route>
           <Route path='about' element={<AboutUs></AboutUs>}></Route>
           <Route path='help' element={<Help></Help>}></Route>
-          <Route path='costumerService'></Route>
+          <Route path='costumerService' element={<CostumerService></CostumerService>}></Route>
         </Routes>
         <Footer></Footer>
       </BrowserRouter>

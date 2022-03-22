@@ -7,6 +7,11 @@
   background-image: linear-gradient(#0f9b88, #fff);
   /* height: 100vh; */
 }
+/*
+@media (max-width: 768px) {
+
+}
+*/
 header {
   background-color: #0f9b88;
 }
@@ -15,6 +20,21 @@ header {
   margin: 0 auto;
   padding: 0 2rem;
 }
+@media (max-width: 480px) {
+  .containerHeader {
+    padding: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .containerHeader {
+    padding: 0;
+  }
+  .themming {
+    text-align: center;
+  }
+}
+
 .logo {
   background-color: #0f9b88;
   width: fit-content;
@@ -46,6 +66,23 @@ header {
   align-items: center;
   gap: 2rem;
 }
+@media (max-width: 480px) {
+  .flexHeader,
+  .search {
+    flex-direction: column;
+  }
+
+  .containerLogin {
+    flex-direction: row;
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .containerLogin {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
 .barraAbout {
   display: flex;
   justify-content: center;
@@ -54,6 +91,7 @@ header {
   border-bottom: 2px solid black;
   border-top: 2px solid black;
 }
+
 .barraA {
   padding: 0.5rem;
   color: #fff;
@@ -64,6 +102,12 @@ header {
 .barraA:hover {
   background-color: #0f9b88;
   color: #fff;
+}
+@media (max-width: 480px) {
+  .barraAbout {
+    flex-direction: column;
+    gap: 0;
+  }
 }
 .search {
   display: flex;

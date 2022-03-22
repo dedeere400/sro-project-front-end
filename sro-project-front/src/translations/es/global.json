@@ -20,14 +20,26 @@
         "banner-mail": "Envianos tu curriculum a"
     },
     "about": {
+        "our-history-header": "Nuestra Historia",
+        "our-trayectory-header": "Nuestra Trayectoria",
         "our-story": "Expresiones como 'este lo tengo repe', '¿me lo cambias?', 'te lo doy si tú me das cinco' y 'sile, nole' o 'sipi, nopi' fueron durante décadas parte habitual de las conversaciones que se escuchaban en los recreos de los colegios de toda España. Pero, ¿qué ha sido del intercambio de cromos?, ¿quedó relegado al olvido por culpa de las nuevas tecnologías?",
         "our-trayectory": "Somos profesionales capaces de integrar los conocimientos, y la capacidad emocional para adaptarse a una variedad de situaciones. Tenemos experiencia diversa que nos distingue en términos de flexibilidad y polivalencia. Y por eso estamos listos para asumir nuevos desafíos. Nuestra empresa no parra de crecer y nuestro objetivo estraeros la infancia de nuevo."
     },
     "help": {
         "help-how-to": "Como navegar la pagina",
-        "help-rules": "Reaglas",
-        "help-li1": "Primero tiene que identificarse o registrarse",
-        "help-li2": "Despues puede navegar libremente por la web y buscar cromos y añadirlos a su cesta",
+        "help-rules": "Reglas",
+        "help-li1": "Primero tiene que identificarse o registrarse.",
+        "help-li2": "Despues puede navegar libremente por la web y buscar cromos y añadirlos a su cesta.",
         "help-li3": "Cuando haya terminado con su eleccion, haz click en la cesta para finalizar el pedido."
+    },
+    "landing": {
+        "land-venta": "Venta de Cromos de Pokemons",
+        "land-id": "Identificate o registrate",
+        "land-name": "Nombre",
+        "land-surnames": "Apellidos",
+        "land-email": "Email",
+        "land-pass": "Contraseña",
+        "land-paypal": "Email de PayPal",
+        "land-submit": "Enviar"
     }
 }

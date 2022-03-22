@@ -20,14 +20,26 @@
         "banner-mail": "Send us your resume to"
     },
     "about": {
+        "our-history-header": "Our History",
+        "our-trayectory-header": "Our Trayectory",
         "our-story": "Expressions such as 'this one I have repe', 'can you change it for me', 'I'll give it to you if you give me five' and 'sile, nole' or 'sipi, nopi' were for decades a common part of the conversations that were heard in the recesses of schools all over Spain. But, what has become of the exchange of stickers, was it relegated to oblivion because of new technologies?",
         "our-trayectory": "We are professionals capable of integrating knowledge, and the emotional capacity to adapt to a variety of situations. We have diverse experience that distinguishes us in terms of flexibility and versatility. And that's why we are ready to take on new challenges. Our company does not stop growing and our goal is to bring you back to childhood."
     },
     "help": {
         "help-how-to": "How to navigate the website",
         "help-rules": "Rules",
-        "help-li1": "You must first identify yourself or register",
+        "help-li1": "You must first identify yourself or register.",
         "help-li2": "You can then freely browse the web and search for stickers and add them to your basket.",
         "help-li3": "When you are finished with your selection, click on the shopping cart to finalize your order."
+    },
+    "landing": {
+        "land-venta": "Sale of Pokemon Stickers",
+        "land-id": "Login or register",
+        "land-name": "Name",
+        "land-surnames": "Surnames",
+        "land-email": "Email",
+        "land-pass": "Password",
+        "land-paypal": "PayPal Email",
+        "land-submit": "Submit"
     }
 }

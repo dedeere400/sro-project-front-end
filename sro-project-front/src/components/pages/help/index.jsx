@@ -53,7 +53,7 @@ function Help() {
                 </Col>
             </Row>
 
-            <Row className="cardShadow">
+            <Row className="cardShadow none">
                 <Col>
                     <Card>
                         <Card.Img variant="top" src="https://imgur.com/Ig5g1Fp.png" />

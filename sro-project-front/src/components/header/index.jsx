@@ -52,7 +52,8 @@ function Header() {
 
                         <div className="containerLogin flexHeader">
                             <div className="login">
-                                <Link to="#">{t("header.auth")}</Link>
+                                <Link className='logsUser' to="#">{t("header.auth")}</Link>
+                                <Link className='logsUser' to="#">{t("header.auth-disconnect")}</Link>
                             </div>
                             <div className="basket">
                                 <Link to="#">🛒</Link>

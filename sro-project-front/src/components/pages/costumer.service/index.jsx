@@ -24,6 +24,18 @@ function CostumerService() {
                         </Card.Text>
                     </Card.Body>
                 </Card>
+
+                <Card className="costumerServiceCard my-5">
+                    <Card.Body>
+                        <Card.Title>{t("costService.costumer-title")}</Card.Title>
+                        <Card.Text className='pedidosText my-0'>
+                            {t("costService.costumer-text")}
+                        </Card.Text>
+                        <Card.Text>
+                            {t("costService.costumer-email")}
+                        </Card.Text>
+                    </Card.Body>
+                </Card>
                 {/* 
                 <Card className="costumerServiceCard" style={{ width: '18rem' }}>
                     <Card.Body>
@@ -63,7 +75,7 @@ function CostumerService() {
 
                 <section className="workContainerCenter p-2">
                     <Col>
-                        <Card>
+                        <Card className='none'>
                             <Card.Img variant="top" src="https://imgur.com/Ig5g1Fp.png" />
                         </Card>
                     </Col>

@@ -2,6 +2,7 @@
     "header": {
         "cromo": "Search Chrome",
         "auth": "Log In",
+        "auth-disconnect": "Log Out",
         "theme": "Change Theme",
         "work-with-us": "Work With Us",
         "about": "About Us",
@@ -40,7 +41,7 @@
         "helpEdit-link": "Edit"
     },
     "landing": {
-        "land-venta": "Sale of Pokemon Stickers",
+        "land-venta": "Sale of Pokemon Chromes",
         "land-id": "Login or register",
         "land-name": "Name",
         "land-surnames": "Surnames",

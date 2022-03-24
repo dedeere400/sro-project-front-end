@@ -8,4 +8,7 @@
   .cardShadow {
     margin: 3rem 0;
   }
+  .none {
+    display: none;
+  }
 }

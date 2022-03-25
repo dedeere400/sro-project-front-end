@@ -4,8 +4,6 @@
   color: #fff;
   background-color: #036e60;
   border-radius: 0%;
-  position: fixed;
-  bottom: 0;
   width: 100%;
 }
 @media (max-width: 480px) {
@@ -13,3 +11,18 @@
     bottom: -2rem;
   }
 }
+
+@media (min-width: 768px) {
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
+/* @media (max-width: 1440px) {
+  .footer {
+    position: static;
+    width: 100%;
+  }
+} */

@@ -1,10 +1,14 @@
-@media (max-width: 768px) {
-  .containerCServise {
-    margin-top: 5rem;
-  }
-}
 @media (max-width: 480px) {
   .none {
     display: none;
+  }
+  .costumerServiceCard {
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .containerCServise {
+    margin-top: 5rem;
   }
 }

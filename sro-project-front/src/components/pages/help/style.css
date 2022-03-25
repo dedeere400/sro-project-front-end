@@ -6,7 +6,7 @@
 }
 @media (max-width: 480px) {
   .cardShadow {
-    margin: 3rem 0;
+    margin: 3rem 0 0 0;
   }
   .none {
     display: none;

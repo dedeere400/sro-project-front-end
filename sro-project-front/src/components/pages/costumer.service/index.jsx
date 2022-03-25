@@ -25,7 +25,7 @@ function CostumerService() {
                     </Card.Body>
                 </Card>
 
-                <Card className="costumerServiceCard my-5">
+                {/* <Card className="costumerServiceCard my-5">
                     <Card.Body>
                         <Card.Title>{t("costService.costumer-title")}</Card.Title>
                         <Card.Text className='pedidosText my-0'>
@@ -35,47 +35,11 @@ function CostumerService() {
                             {t("costService.costumer-email")}
                         </Card.Text>
                     </Card.Body>
-                </Card>
-                {/* 
-                <Card className="costumerServiceCard" style={{ width: '18rem' }}>
-                    <Card.Body>
-                        <Card.Title>Tus pedidos</Card.Title>
-                        <Card.Text className='pedidosText m-0'>
-                            Rastrear pedidos
-                        </Card.Text>
-                        <Card.Text>
-                            Editar o cancelar pedidos
-                        </Card.Text>
-                    </Card.Body>
-                </Card>
-
-                <Card className="costumerServiceCard" style={{ width: '18rem' }}>
-                    <Card.Body>
-                        <Card.Title>Tus pedidos</Card.Title>
-                        <Card.Text className='pedidosText m-0'>
-                            Rastrear pedidos
-                        </Card.Text>
-                        <Card.Text>
-                            Editar o cancelar pedidos
-                        </Card.Text>
-                    </Card.Body>
-                </Card>
-
-                <Card className="costumerServiceCard" style={{ width: '18rem' }}>
-                    <Card.Body>
-                        <Card.Title>Tus pedidos</Card.Title>
-                        <Card.Text className='pedidosText m-0'>
-                            Rastrear pedidos
-                        </Card.Text>
-                        <Card.Text>
-                            Editar o cancelar pedidos
-                        </Card.Text>
-                    </Card.Body>
                 </Card> */}
 
-                <section className="workContainerCenter p-2">
+                <section className="workContainerCenter p-2 none">
                     <Col>
-                        <Card className='none'>
+                        <Card>
                             <Card.Img variant="top" src="https://imgur.com/Ig5g1Fp.png" />
                         </Card>
                     </Col>

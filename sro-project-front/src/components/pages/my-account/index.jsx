@@ -1,74 +1,116 @@
 import { useState, useEffect } from "react";
 import Form from "react-bootstrap/Form";
+import Row from "react-bootstrap/Row";
 import Button from "react-bootstrap/Button";
 import { Navigate } from "react-router-dom";
 import "./style.css";
 import { useTranslation } from "react-i18next";
 
-function LandingPage() {
+function MyAccount({ updateLoggedIn }) {
     const [t] = useTranslation("global");
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");
     const [email, setEmail] = useState("");
-    const [password, setPassword] = useState("");
     const [paypalEmail, setPaypalEmail] = useState("");
-    const [registerSuccess, setRegisterSuccess] = useState(false);
+    const [redirectToHome, setRedirectToHome] = useState(false);
+
+    const deleteUser = () => {
+        fetch("http://localhost:4000/users", {
+            method: "DELETE",
+            headers: {
+                Authorization: "Bearer " + localStorage.getItem("access_token"),
+            },
+        })
+            .then((res) => res.json())
+            .then((response) => {
+                console.log("Successs:", response);
+                localStorage.removeItem("access_token");
+                updateLoggedIn(false);
+                setRedirectToHome(true);
+            })
+            .catch((error) => {
+                console.error("Errors:", error);
+            });
+    };
+
+    useEffect(() => {
+        fetch("http://localhost:4000/users", {
+            method: "GET",
+            headers: {
+                Authorization: "Bearer " + localStorage.getItem("access_token"),
+            },
+        })
+            .then((res) => res.json())
+            .then((response) => {
+                setFirstName(response.firstName);
+                setLastName(response.lastName);
+                setEmail(response.email);
+                setPaypalEmail(response.email);
+                console.log("Successs:", response);
+            })
+            .catch((error) => {
+                console.error("Errors:", error);
+            });
+    }, []);
 
     return (
         <main className="mainRegister">
-            {registerSuccess && <Navigate to={{ pathname: "/login" }} />}
+            {redirectToHome && <Navigate to={{ pathname: "/" }} />}
             <h1 className="encabezadoPoke text-center mb-4 text-light">
-                {t("landing.land-venta")}
+                {t("header.my-account")}
             </h1>
             <Form
                 className="registerForm d-flex flex-column p-2 mb-5 bg-white"
                 onSubmit={(e) => {
                     e.preventDefault();
 
-                    fetch("http://localhost:4000/auth/register", {
-                        method: "POST",
+                    fetch("http://localhost:4000/users", {
+                        method: "PATCH",
                         body: JSON.stringify({
                             firstName,
                             lastName,
                             email,
-                            password,
                             paypalEmail,
                         }),
                         headers: {
+                            Authorization: "Bearer " + localStorage.getItem("access_token"),
                             "Content-Type": "application/json",
                         },
                     })
                         .then((res) => res.json())
-                        .catch((error) => console.error("Error:", error))
                         .then((response) => {
                             console.log("Success:", response);
-                            setRegisterSuccess(true);
-                        });
+                        })
+                        .catch((error) => console.error("Error:", error));
                 }}
             >
                 <Form.Text className="text-muted">
-                    <h3 className="center text-danger">{t("landing.land-id")}</h3>
+                    <h3 className="center text-danger">
+                        {t("myAccount.update-my-account")}
+                    </h3>
                 </Form.Text>
 
-                <Form.Group className="mb-3" controlId="formBasicPassword1">
+                <Form.Group className="mb-3" controlId="formBasicPassword">
                     <Form.Label className="label m-0">
                         {t("landing.land-name")}
                     </Form.Label>
                     <Form.Control
                         className="input"
                         type="text"
+                        value={firstName}
                         onChange={(e) => {
                             setFirstName(e.target.value);
                         }}
                     />
                 </Form.Group>
-                <Form.Group className="mb-3" controlId="formBasicPassword2">
+                <Form.Group className="mb-3" controlId="formBasicPassword">
                     <Form.Label className="label m-0">
                         {t("landing.land-surnames")}
                     </Form.Label>
                     <Form.Control
                         className="input"
                         type="text"
+                        value={lastName}
                         onChange={(e) => {
                             setLastName(e.target.value);
                         }}
@@ -82,44 +124,41 @@ function LandingPage() {
                     <Form.Control
                         className="input"
                         type="email"
+                        value={email}
                         onChange={(e) => {
                             setEmail(e.target.value);
                         }}
                     />
                 </Form.Group>
 
-                <Form.Group className="mb-3" controlId="formBasicPassword3">
-                    <Form.Label className="label m-0">
-                        {t("landing.land-pass")}
-                    </Form.Label>
-                    <Form.Control
-                        className="input"
-                        type="password"
-                        onChange={(e) => {
-                            setPassword(e.target.value);
-                        }}
-                    />
-                </Form.Group>
-
-                <Form.Group className="mb-3" controlId="formBasicPassword4">
+                <Form.Group className="mb-3" controlId="formBasicPassword">
                     <Form.Label className="label m-0">
                         {t("landing.land-paypal")}
                     </Form.Label>
                     <Form.Control
                         className="input"
                         type="email"
+                        value={paypalEmail}
                         onChange={(e) => {
                             setPaypalEmail(e.target.value);
                         }}
                     />
                 </Form.Group>
-
-                <Button className="btnRegister m-auto" variant="primary" type="submit">
-                    {t("landing.land-submit")}
-                </Button>
+                <Row>
+                    <Button className="btnUpdate m-auto" variant="primary" type="submit">
+                        {t("myAccount.update")}
+                    </Button>
+                    <Button
+                        className="btnDelete m-auto"
+                        variant="danger"
+                        onClick={deleteUser}
+                    >
+                        {t("myAccount.delete")}
+                    </Button>
+                </Row>
             </Form>
         </main>
     );
 }
 
-export default LandingPage;
+export default MyAccount;

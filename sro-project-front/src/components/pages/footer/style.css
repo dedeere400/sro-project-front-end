@@ -6,23 +6,29 @@
   border-radius: 0%;
   width: 100%;
 }
-@media (max-width: 480px) {
-  .footerCard {
-    bottom: -2rem;
-  }
+.decoration {
+  text-decoration: none;
+  color: white;
 }
-
-@media (min-width: 768px) {
-  .footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-  }
+.decoration:hover {
+  text-decoration: underline;
 }
-
-/* @media (max-width: 1440px) {
-  .footer {
-    position: static;
-    width: 100%;
-  }
+.rrss {
+  text-decoration: none;
+  color: white;
+}
+.gap {
+  gap: 1rem;
+}
+.gap div a {
+  color: white;
+  text-decoration: none;
+}
+.gap div a:hover {
+  text-decoration: underline;
+}
+/* .footer {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
 } */

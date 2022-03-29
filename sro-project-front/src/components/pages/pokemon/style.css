@@ -1,0 +1,50 @@
+.bug-bg {
+  background-color: #a6b91a !important;
+}
+
+.electric-bg {
+  background-color: #f7d02c !important;
+}
+
+.fire-bg {
+  background-color: #ee8130 !important;
+}
+
+.flying-bg {
+  background-color: #a98ff3 !important;
+}
+
+.grass-bg {
+  background-color: #7ac74c !important;
+}
+
+.ground-bg {
+  background-color: #e2bf65 !important;
+}
+
+.none-bg {
+  background-color: #c6bbc6 !important;
+}
+
+.normal-bg {
+  background-color: #a8a77a !important;
+}
+
+.poison-bg {
+  background-color: #a33ea1 !important;
+}
+
+.pokemon-types {
+  margin-bottom: 5px !important;
+}
+.pokemon {
+  box-shadow: 0px 0px 10px 0px #000000;
+}
+
+.water-bg {
+  background-color: #6390f0 !important;
+}
+
+.add-cart-button {
+  width: 100%;
+}

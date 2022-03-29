@@ -5,10 +5,19 @@
   .costumerServiceCard {
     margin: 0;
   }
+  .containerCServise {
+    padding: 0;
+  }
 }
 
 @media (max-width: 768px) {
   .containerCServise {
     margin-top: 5rem;
+  }
+  .card {
+    margin-top: 0;
+  }
+  .none {
+    margin-bottom: 3rem;
   }
 }

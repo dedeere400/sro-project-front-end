@@ -11,9 +11,9 @@ function AboutUs() {
     const [t] = useTranslation('global')
 
     return (
-        <Container fluid>
+        <Container className="bgMacho" fluid>
             <Row className="cardShadow">
-                <Col>
+                <Col className="p-0">
                     <Card>
                         <Card.Body>
                             <Card.Title>{t("about.our-history-header")}</Card.Title>
@@ -26,7 +26,7 @@ function AboutUs() {
             </Row>
 
             <Row className="cardShadow">
-                <Col>
+                <Col className="p-0">
                     <Card>
                         <Card.Body>
                             <Card.Title>{t("about.our-trayectory-header")}</Card.Title>
@@ -39,7 +39,7 @@ function AboutUs() {
             </Row>
 
             <Row className="m-5 cardShadow none">
-                <Col>
+                <Col className="p-0">
                     <Card>
                         <Card.Img variant="top" src="https://imgur.com/Ig5g1Fp.png" />
                     </Card>

@@ -11,7 +11,7 @@ function TrabajaNosotros() {
 
     return (
         <section className="work d-flex flex-column">
-            <div className="workContainerCenter p-2 mt-2 d-flex flex-column">
+            <div className="workContainerCenter p-2 mt-2 d-flex flex-column bg-white">
                 <h1 className='workEncabezado mb-5 text-center'>{t("banner.banner-work")}</h1>
                 <h5 className="textoPlano bold text-center">{t("banner.banner-p1")}</h5>
                 <p className="textoPlano bold">{t("banner.banner-p2")}</p>
@@ -27,7 +27,7 @@ function TrabajaNosotros() {
                 <p className="textoPlano">{t("banner.banner-mail")} <span className='workContactEmail text-info'>sro@gmail.com</span></p>
             </div>
             <Row className="m-5 cardShadow none">
-                <Col>
+                <Col className="p-0">
                     <Card>
                         <Card.Img variant="top" src="https://imgur.com/Ig5g1Fp.png" />
                     </Card>

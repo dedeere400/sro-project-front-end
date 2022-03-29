@@ -31,6 +31,7 @@
   .containerHeader {
     padding: 0;
   }
+
   .themming {
     text-align: center;
   }
@@ -86,12 +87,23 @@
 @media (max-width: 768px) {
   .containerLogin {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     min-width: 7rem;
   }
+
   .logsUser {
-    display: block;
+    display: inline-block;
+    margin: auto;
   }
+}
+.logsUser {
+  display: inline-block;
+  margin: auto;
+  text-decoration: none;
+}
+.logsUser:hover {
+  color: white;
+  text-decoration: underline;
 }
 
 .barraAbout {
@@ -137,7 +149,18 @@
 }
 .login {
   display: flex;
+
   gap: 1rem;
+}
+@media (max-width: 1024px) {
+  .login {
+    align-items: center;
+  }
+  .themming {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 @media (max-width: 768px) {
   .login {

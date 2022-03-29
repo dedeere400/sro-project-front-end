@@ -4,10 +4,13 @@
         "auth": "Log In",
         "auth-disconnect": "Log Out",
         "theme": "Change Theme",
+        "pokemons": "Pokemons",
         "work-with-us": "Work With Us",
         "about": "About Us",
         "ayuda": "Help",
-        "costumer-service": "Costumer Service"
+        "costumer-service": "Costumer Service",
+        "my-account": "My Account",
+        "create-account": "Create Account"
     },
     "banner": {
         "banner-work": "Work with Us",
@@ -35,20 +38,19 @@
     },
     "helpEdit": {
         "helpEdit-title": "Edit account or unsubscribe.",
-        "helpEdit-li1": "Click on the edit account button.",
-        "helpEdit-li2": "Fill in the form.",
-        "helpEdit-li3": "The request is executed in 3 working days.",
-        "helpEdit-link": "Edit"
+        "helpEdit-li1": "Click on my account.",
+        "helpEdit-li2": "Fill in the form with the new data."
     },
     "landing": {
         "land-venta": "Sale of Pokemon Chromes",
-        "land-id": "Login or register",
+        "land-id": "register",
         "land-name": "Name",
         "land-surnames": "Surnames",
         "land-email": "Email",
         "land-pass": "Password",
         "land-paypal": "PayPal Email",
-        "land-submit": "Submit"
+        "land-submit": "Submit",
+        "login": "Login"
     },
     "costService": {
         "costumer-headre": "Hello, how can we help you?",
@@ -58,5 +60,13 @@
     },
     "footer": {
         "copyright": "All rights reserved"
+    },
+    "cart": {
+        "name": "Cart"
+    },
+    "myAccount": {
+        "update-my-account": "Update my account",
+        "update": "Update",
+        "delete": "Delete"
     }
 }

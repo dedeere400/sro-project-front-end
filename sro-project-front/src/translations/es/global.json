@@ -4,10 +4,13 @@
         "theme": "Cambiar Tema",
         "auth": "Identificate",
         "auth-disconnect": "Desconectate",
+        "pokemons": "Pokemons",
         "work-with-us": "Trabaja Con Nosotros",
         "about": "Sobre Nosotros",
         "ayuda": "Ayuda",
-        "costumer-service": "Atencion Al Cliente"
+        "costumer-service": "Atencion Al Cliente",
+        "my-account": "Mi Cuenta",
+        "create-account": "Registrate"
     },
     "banner": {
         "banner-work": "Trabaje con nosotros",
@@ -35,20 +38,19 @@
     },
     "helpEdit": {
         "helpEdit-title": "Editar cuenta o darse de baja.",
-        "helpEdit-li1": "Pulsa al boton editar cuenta.",
-        "helpEdit-li2": "Rellena el formulario.",
-        "helpEdit-li3": "La solicutud se ejecuta en 3 dias laborales.",
-        "helpEdit-link": "Editar"
+        "helpEdit-li1": "Pulsa a mi cuenta.",
+        "helpEdit-li2": "Rellena el formulario con los nuevos datos."
     },
     "landing": {
         "land-venta": "Venta de Cromos de Pokemons",
-        "land-id": "Identificate o registrate",
+        "land-id": "Registrate",
         "land-name": "Nombre",
         "land-surnames": "Apellidos",
         "land-email": "Email",
         "land-pass": "Contraseña",
         "land-paypal": "Email de PayPal",
-        "land-submit": "Enviar"
+        "land-submit": "Enviar",
+        "login": "Identifícate"
     },
     "costService": {
         "costumer-headre": "Hola. En qué podemos ayudarte?",
@@ -58,5 +60,13 @@
     },
     "footer": {
         "copyright": "Todos los derechos reservados"
+    },
+    "cart": {
+        "name": "Carrito"
+    },
+    "myAccount": {
+        "update-my-account": "Actualizar mi cuenta",
+        "update": "Actualizar",
+        "delete": "Eliminar"
     }
 }
